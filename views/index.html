@@ -1,6 +1,8 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>GameAdminWeb</title>
     <link rel="stylesheet" type="text/css" href="/lib/themes/default/easyui.css">
     <link rel="stylesheet" type="text/css" href="/lib/themes/icon.css">
     <link rel="stylesheet" type="text/css" href="/css/demo.css">
@@ -33,9 +35,10 @@
     </div>
 
     <!-- layout 左 -->
-    <div data-options="region:'west',split:true" title="菜单" style="width:200px; overflow:hidden;">
+    <div data-options="region:'west',split:true" title="菜单" style="width:200px;">
         <div class="easyui-accordion" data-options="fit:true,border:false">
             <div title="配置" data-options="selected:true" style="padding:10px;">
+                <a class="l-link" href="javascript:addTab('search','/views/test_search')" target="_blank">search</a>
                 <a class="l-link" href="javascript:addTab('test','/views/test_test')" target="_blank">test</a>
                 <a class="l-link" href="javascript:addTab('grid','/views/test_grid')" target="_blank">grid</a>
             </div>

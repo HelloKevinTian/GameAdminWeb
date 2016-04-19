@@ -4,15 +4,17 @@ var util = require('../../app/util');
 
 function handle(clientip, args, endcb, req, res) {
 
+	common.db.collection('info').find({}).toArray(function(err, info) {
+		var msg = {};
 
-	endcb({
-		'itemid': '111',
-		'productid': util.formatDate(),
-		'listprice': '222',
-		'unitcost': '333',
-		'attr1': '444',
-		'status': '555'
-	});
+        if (err) {
+        	msg.err = err;
+        } else {
+        	msg.result = info;
+        }
+
+        endcb(msg);
+    });
 };
 
 module.exports = {
