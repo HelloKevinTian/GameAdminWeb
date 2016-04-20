@@ -1,3 +1,3 @@
 # GameAdminWeb
 
-Ê¹ÓÃnodejs,express,easyui´î½¨µÄÓÎÏ·¹ÜÀíºóÌ¨¡£
+ä½¿ç”¨nodejs,express,easyuiæ­å»ºçš„æ¸¸æˆç®¡ç†åå°ã€‚

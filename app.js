@@ -1,7 +1,3 @@
-/**
- *  工具服务器-启动服务
- *
- */
 var Connector = require('ss-server_web');
 var config = require('./cfg/server.json');
 
